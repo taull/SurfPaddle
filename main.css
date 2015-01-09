@@ -97,16 +97,16 @@ h1 {
 }
 
 .banner-heading h1 {
-  text-align:center;
-  position:relative;
-  font-size:100px;
-  font-weight:400;
-  line-height:110px;
-  text-transform:uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 102px;
+  font-weight: 400;
+  line-height: 110px;
+  text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
-  color:#FFF;
-  margin:0;
-  padding-top:150px;
+  color: #FFF;
+  margin: 0;
+  padding-top: 150px;
 }
 
 .banner-heading h5 {
@@ -239,6 +239,11 @@ h1 {
   background:transparent;
 }
 
+.content .underline {
+  border-bottom:1px solid #dfdfdf;
+  padding-bottom:-2px;
+  }
+
 .content-footer {
   display:inline-block;
   margin-bottom: 64px;
@@ -256,10 +261,12 @@ h1 {
 
 .comments-container:hover .comments-image {
   background:#043450;
+  transition:.5s;
 }
 
 .comments-container:hover .comments-text {
   background:#026EAE;
+  transition:.5s;
 }
 
 .comments-image {
@@ -311,10 +318,12 @@ h1 {
 
 .later-container:hover .later-image {
   background:#043450;
+  transition:.5s;
 }
 
 .later-container:hover .later-text {
   background:#026EAE;
+  transition:.5s;
 }
 
 .later-image {
@@ -364,10 +373,12 @@ h1 {
 
 .share-container:hover .share-image {
   background:#043450;
+  transition:.5s;
 }
 
 .share-container:hover .share-text {
   background:#026EAE;
+  transition:.5s;
 }
 
 .share-image {
@@ -602,17 +613,17 @@ h1 {
   bottom:0;
   font-family:'Oswald', sans-serif;
   text-transform:uppercase;
-  font-size:28px;
+  font-size:29px;
   font-weight:400;
   margin:0;
-  padding-left:15px;
-  padding-bottom:10px;
+  padding-left:16px;
+  padding-bottom:7px;
 }
 
 .carousel-box1:hover .carousel-title {
   color:#FFF;
-  text-shadow:1px 1px 6px #000;
-  transition:.5s;
+  text-shadow:1px 1px 6px #555;
+  transition:.1s;
 }
 
 .carousel-box1::after {
@@ -647,21 +658,21 @@ h1 {
 }
 
 .carousel-box2 h3 {
-  position:absolute;
-  bottom:0;
-  font-family:'Oswald', sans-serif;
-  text-transform:uppercase;
-  font-size:28px;
-  font-weight:400;
-  margin:0;
-  padding-left:15px;
-  padding-bottom:10px;
+  position: absolute;
+  bottom: 0;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 16px;
+  padding-bottom: 7px;
 }
 
 .carousel-box2:hover .carousel-title {
   color:#FFF;
-  text-shadow:1px 1px 6px #000;
-  transition:.5s;
+  text-shadow:1px 1px 6px #555;
+  transition:.1s;
 }
 
 .carousel-box2::after {
@@ -696,23 +707,23 @@ h1 {
 }
 
 .carousel-box3 h3 {
-  position:absolute;
-  bottom:0;
-  width:230px;
-  line-height:36px;
-  font-family:'Oswald', sans-serif;
-  text-transform:uppercase;
-  font-size:28px;
-  font-weight:400;
-  margin:0;
-  padding-left:15px;
-  padding-bottom:10px;
+  position: absolute;
+  bottom: 0;
+  width: 260px;
+  line-height: 37px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 29px;
+  font-weight: 400;
+  margin: 0;
+  padding-left: 18px;
+  padding-bottom: 13px;
 }
 
 .carousel-box3:hover .carousel-title {
   color:#FFF;
-  text-shadow:1px 1px 6px #000;
-  transition:.5s;
+  text-shadow:1px 1px 6px #555;
+  transition:.1s;
 }
 
 .carousel-box3::after {
@@ -751,17 +762,17 @@ h1 {
   bottom:0;
   font-family:'Oswald', sans-serif;
   text-transform:uppercase;
-  font-size:28px;
+  font-size:29px;
   font-weight:400;
   margin:0;
-  padding-left:15px;
-  padding-bottom:10px;
+  padding-left:16px;
+  padding-bottom:7px;
 }
 
 .carousel-box4:hover .carousel-title {
   color:#FFF;
-  text-shadow:1px 1px 6px #000;
-  transition:.5s;
+  text-shadow:1px 1px 6px #555;
+  transition:.1s;
 }
 
 .carousel-box4::after {
@@ -795,7 +806,7 @@ h1 {
 }
 
 .footer-container {
-  width:974px;
+  width:996px;
   position:relative;
   margin:0 auto;
 }
@@ -824,6 +835,7 @@ h1 {
   right: 0;
   top: 40%;
   transform: translateY(-60%);
+  margin-right:13px;
 }
 
 .footer-nav li {
