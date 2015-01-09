@@ -491,11 +491,15 @@ h1 {
   padding-left:1px;
 }
 
+.sidebar-authorinfo {
+  text-align:center;
+  padding-left:3px;
+}
 
 .sidebar-circular {
   display: block;
   position: relative;
-  margin-left: 99px;
+  margin-left:auto;
   margin-right: auto;
   width: 84px;
   height: 84px;
@@ -663,9 +667,8 @@ h1 {
 
 .carousel {
   width:100%;
-  height:330px;
-  background:#555;
   padding:0;
+  margin-bottom:-4px;
 }
 
 .carousel > div {
@@ -724,7 +727,7 @@ h1 {
 .carousel-box2 {
   width:25%;
   height:330px;
-  background:url('images/alana.jpg') center center;
+  background:url('images/surfer_girls.jpg') center center;
   background-size:cover;
   position:relative;
 }
@@ -773,7 +776,7 @@ h1 {
 .carousel-box3 {
   width:25%;
   height:330px;
-  background:url('images/surfer_girls.jpg') center center;
+  background:url('images/alana.jpg') center center;
   background-size:cover;
   position:relative;
 }
@@ -824,7 +827,7 @@ h1 {
 .carousel-box4 {
   width:25%;
   height:330px;
-  background:url('images/surfer_water.jpg') center center;
+  background:url('images/surfergirl.jpg') center center;
   background-size:cover;
   position:relative;
 }
@@ -936,4 +939,133 @@ h1 {
   font-size:14px;
   font-family:'Open Sans', sans-serif;
   font-weight:300;
+}
+
+
+@media screen and (max-width:480px) {
+
+  .content, .sidebar, .pagebody, .carousel > div, .footer-bottom {
+    display:block;
+  }
+
+  .banner {
+    height:200px;
+  }
+
+  .banner-menu {
+    width:100%;
+  }
+
+
+  .banner-heading h1 {
+    font-size:40px;
+    padding-top:50px;
+    line-height:52px;
+  }
+
+  .pagebody {
+    width:100%;
+  }
+  .content {
+    width:100%;
+  }
+
+  .content h2 {
+    font-size:36px;
+    line-height:46px;
+    text-align:center;
+    padding-left:1em;
+    padding-right:1em;
+  }
+
+  .content p {
+    padding-left:1em;
+    padding-right:1em;
+  }
+  .author-info {
+    text-align:center;
+  }
+
+  .content-footer {
+    display:block;
+  }
+  .comments-container {
+    display:block;
+  }
+
+  .sidebar {
+    width:100%;
+    margin:0;
+    padding-left:0;
+  }
+
+  .sidebar-ad, .sidebar-ad-link {
+    display:none;
+  }
+
+  .sidebar-authorinfo {
+    padding-left:0;
+  }
+
+  .sidebar-circular {
+    height:150px;
+    width:150px;
+    border-radius:75px;
+  }
+
+  .sidebar-circular::after {
+    display:none;
+  }
+
+  .sidebar-socialmedia {
+    margin-bottom:15px;
+    border-bottom:1px solid #dfdfdf;
+    padding-bottom:15px;
+    padding-left:0;
+  }
+
+  .sidebar h3, .sidebar p {
+    text-align:center;
+  }
+
+  .sidebar h3 {
+    margin-top:10px;
+  }
+
+
+  .carousel-header-container {
+    width:100%;
+    height:100px;
+  }
+
+
+  .carousel-header-container h2 {
+    font-size:36px;
+    margin-bottom:10px;
+  }
+  .carousel-box1, .carousel-box2, .carousel-box3, .carousel-box4 {
+    width:100%;
+    height:330px;
+  }
+
+  .footer-container {
+    width:100%;
+  }
+
+  .footer-copyright, .footer-nav {
+    display:block;
+    text-align:center;
+  }
+
+  .footer-nav ul {
+
+    display: none;
+    text-align: center;
+    padding: 0;
+    margin-right: 0px;
+    margin-top: -15px;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
 }
