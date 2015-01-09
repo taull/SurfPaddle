@@ -33,6 +33,7 @@ h1 {
   display:inline-block;
 }
 
+
 .banner-menu-logo a, .banner-menu-logo p {
   display:inline-block;
   margin-top:-2px;
@@ -44,8 +45,31 @@ h1 {
   font-family:'Open Sans', sans-serif;
   text-transform:uppercase;
   font-size:16px;
-  padding-left:3px;
+  padding-left:5px;
   color:#04344F;
+}
+
+.surfpaddle-logo {
+  display: inline-block;
+  width: 54px;
+  height: 53px;
+  margin-left: -1px;
+  background: url('images/S&P_logo.png');
+  margin-top: -1px;
+}
+
+.surfpaddle-logo a {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.surfpaddle-logo:hover {
+  display:inline-block;
+  background:url('images/S&P_logo_lightblue.png');
+  transition:.5s;
 }
 
 .banner-menu-links {
@@ -71,9 +95,26 @@ h1 {
   margin-top: 5px;
 }
 
-.banner-menu-links .search-icon {
+.search-icon {
+  display:inline-block;
+  background:url('images/S&P_search.png');
+  height:27px;
+  width:26px;
+  margin-right: 7px;
   margin-top: 5px;
-  margin-right: 6px;
+}
+
+.search-icon:hover {
+  background:url('images/S&P_search_lightblue.png');
+  transition:.3s;
+}
+
+.search-icon a {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 .banner-menu-links p {
@@ -537,12 +578,13 @@ h1 {
 }
 
 .sidebar p {
-  text-align:left;
-  font-family:'Open Sans', sans-serif;
-  font-size:16px;
-  line-height:24px;;
-  color:#999;
-  margin-top:0;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #999;
+  margin-top: 3px;
 }
 
 .sidebar h3 {
