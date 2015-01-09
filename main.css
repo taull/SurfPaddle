@@ -132,6 +132,11 @@ h1 {
   display:inline-block;
 }
 
+.about-link a {
+  text-decoration:none;
+  color:#04344F;
+}
+
 .about-link:hover a {
   color:#FFF;
   transition:500ms;
@@ -832,7 +837,7 @@ h1 {
   font-size:29px;
   font-weight:400;
   margin:0;
-  padding-left:16px;
+  padding-left:20px;
   padding-bottom:7px;
 }
 
