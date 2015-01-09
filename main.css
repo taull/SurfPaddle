@@ -14,30 +14,829 @@ h1 {
 }
 
 .banner {
-  background: linear-gradient( rgba(17, 117, 192, 0.75), rgba(17, 117, 192, 0.75)), url("images/mountains.jpg");  background-color:#000;
+  background: linear-gradient( rgba(17, 117, 192, 0.75), rgba(17, 117, 192, 0.75)), url("images/surfingawave.jpg");
   background-size:cover;
   width:100%;
-  font-family: 'Open Sans', sans-serif;
   height:524px;
+  position:relative;
+  padding-top:8px;
 }
 
-.banner h1 {
+.banner-menu {
+  position:relative;
+  width:1025px;
+  height:50px;
+  margin:0 auto;
+}
+
+.banner-menu-logo {
+  display:inline-block;
+}
+
+.banner-menu-logo a, .banner-menu-logo p {
+  display:inline-block;
+  margin-top:-2px;
+  vertical-align:top;
+}
+
+.banner-menu-logo p {
+  padding-top:15px;
+  font-family:'Open Sans', sans-serif;
+  text-transform:uppercase;
+  font-size:16px;
+  padding-left:3px;
+  color:#04344F;
+}
+
+.banner-menu-links {
+  position:absolute;
+  right:18px;
+  margin-top:4px;
+}
+
+.banner-menu-links, .banner-menu-links a, .banner-menu-links p {
+  display:inline-block;
+}
+
+
+
+
+.banner-menu-links .about-link {
+  font-family:'Oswald', sans-serif;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#04344F;
+  font-size:18px;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+.banner-menu-links .search-icon {
+  margin-top: 5px;
+  margin-right: 6px;
+}
+
+.banner-menu-links p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: -4px;
+  font-family:'Oswald', sans-serif;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#04344F;
+  font-size:18px;
+  vertical-align:top;
+}
+
+.banner-heading {
+  font-family: 'Open Sans', sans-serif;
+  max-width:960px;
+  margin:0 auto;
+  z-index:10;
+}
+
+.banner-heading h1 {
   text-align:center;
-  font-size:80px;
-  font-weight:600;
+  position:relative;
+  font-size:100px;
+  font-weight:400;
+  line-height:110px;
   text-transform:uppercase;
   font-family: 'Open Sans', sans-serif;
   color:#FFF;
   margin:0;
-  padding-top: 200px;
+  padding-top:150px;
 }
 
-.banner h5 {
+.banner-heading h5 {
   margin:0;
   text-align:center;
-  font-size:14px;
-  font-family: 'Open Sans', sans-serif;
+  font-size:15px;
+  font-family:'Open Sans', sans-serif;
   font-weight:400;
+  line-height:8px;
+  color:#04344F;
+}
+
+.pagebody {
+  width:974px;
+  margin:0 auto;
+}
+
+.content {
+  display: inline-block;
+  width: 620px;
+  vertical-align: top;
+  margin-top: 62px;
+}
+
+.content p {
+  font-family:'Open Sans', sans-serif;
+  font-size:16px;
+  line-height:26px;
+  color:#555;
+  margin-top:29px;
+}
+
+.content-blurb {
+  border-left:2px solid #dfdfdf;
+  height:55px;
+  padding-left:0px;
+  margin-left: 7px;
+  margin-top: -11px;
+}
+
+.content-blurb p {
+  font-size:28px;
+  padding-top:18px;
+  padding-left:17px;
   text-transform:uppercase;
-  color:#000;
+  font-family:'Open Sans', sans-serif;
+  color:#026EAE;
+}
+
+.content h2 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 63px;
+  font-weight: 400;
+  line-height: 69px;
+  color: #043450;
+  margin-bottom: 5px;
+  margin-top: 0px;
+}
+
+
+.content .author-info {
+  margin-top:0;
+}
+
+.content .author-info a {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0052A4;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 2px;
+}
+
+.content .author-info p {
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: top;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+  margin: 0;
+  padding-top: 4px;
+  padding-left: 9px;
+}
+
+.content-circular {
+  display: inline-block;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  background: url(images/taull_profile.jpg) no-repeat;
+  background-size: cover;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+.content-circular::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(0,0,50,.2);
+  transition:.5s;
+}
+
+.content-circular:hover::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:transparent;
+}
+
+.content-footer {
+  display:inline-block;
+  margin-bottom: 64px;
+  padding-top: 3px;
+  padding-left: 4px;
+}
+
+.comments-container {
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+  margin:0;
+  width:160px;
+}
+
+.comments-container:hover .comments-image {
+  background:#043450;
+}
+
+.comments-container:hover .comments-text {
+  background:#026EAE;
+}
+
+.comments-image {
+  display: inline;
+  background: #5D686E;
+  height: 29px;
+  width: 29px;
+  padding-left: 2px;
+  padding-top: 3px;
+  padding-bottom: 8px;
+  padding-right: 1px;
+  vertical-align: top;
+}
+
+
+.comments-text {
+  display: inline;
+  margin: 0;
+  background: #A2B3BE;
+  height: 29px;
+  width: 131px;
+  vertical-align: top;
+  padding-top: 3px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 9px;
+}
+.comments-text p {
+  display: inline-block;
+  font-size: 14px;
+  color: #FFF;
+  margin: 0;
+  padding-left: 5px;
+  vertical-align: top;
+  font-family:'Open Sans', sans-serif;
+}
+
+
+
+
+.later-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  width: 134px;
+  margin-left: 3px;
+}
+
+.later-container:hover .later-image {
+  background:#043450;
+}
+
+.later-container:hover .later-text {
+  background:#026EAE;
+}
+
+.later-image {
+  display: inline;
+  background: #5D686E;
+  height: 29px;
+  width: 29px;
+  padding-left: 2px;
+  padding-top: 3px;
+  padding-bottom: 8px;
+  padding-right: 1px;
+  vertical-align: top;
+}
+
+.later-text {
+  display: inline;
+  margin: 0;
+  background: #A2B3BE;
+  height: 29px;
+  width: 131px;
+  vertical-align: top;
+  padding-top: 3px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  padding-right: 13px;
+}
+.later-text p {
+  display: inline-block;
+  font-size: 14px;
+  color: #FFF;
+  margin: 0;
+  padding-left: 5px;
+  vertical-align: top;
+  font-family:'Open Sans', sans-serif;
+}
+
+
+
+
+.share-container {
+  position:relative;
+  display:inline-block;
+  vertical-align:top;
+  margin:0;
+  width:160px;
+}
+
+.share-container:hover .share-image {
+  background:#043450;
+}
+
+.share-container:hover .share-text {
+  background:#026EAE;
+}
+
+.share-image {
+  display: inline;
+  background: #5D686E;
+  height: 29px;
+  width: 29px;
+  padding-left: 0px;
+  padding-top: 3px;
+  padding-bottom: 8px;
+  vertical-align: top;
+}
+
+
+.share-text {
+  display: inline;
+  margin: 0;
+  background: #A2B3BE;
+  height: 29px;
+  width: 131px;
+  vertical-align: top;
+  padding-top: 3px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 10px;
+}
+.share-text p {
+  display: inline-block;
+  font-size: 14px;
+  color: #FFF;
+  margin: 0;
+  padding-left: 5px;
+  vertical-align: top;
+  font-family:'Open Sans', sans-serif;
+}
+
+.sidebar {
+  display: inline-block;
+  width: 277px;
+  background: transparent;
+  text-align: center;
+  margin-left: 73px;
+  margin-top: 82px;
+  padding-left:1px;
+}
+
+
+.sidebar-circular {
+  display: block;
+  position: relative;
+  margin-left: 99px;
+  margin-right: auto;
+  width: 84px;
+  height: 84px;
+  border-radius: 42px;
+  background: url(images/taull_profile.jpg) no-repeat;
+  background-size: cover;
+}
+
+.sidebar-circular::after {
+  content:"";
+  display:block;
+  position:absolute;
+  width: 84px;
+  height: 84px;
+  border-radius: 42px;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(0,0,50,.2);
+  transition: 1s;
+}
+
+.sidebar-circular:hover::after {
+  content:"";
+  display:block;
+  position:absolute;
+  width: 84px;
+  height: 84px;
+  border-radius: 42px;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:transparent;
+}
+
+.sidebar .sidebar-authorname a {
+  display:block;
+  text-align:center;
+  text-transform:uppercase;
+  text-decoration:none;
+  vertical-align:top;
+  font-family:'Open Sans', sans-serif;
+  font-size:16px;
+  font-weight:600;
+  color:#0052A4;
+  margin:0;
+  padding-top:10px;
+}
+
+
+.sidebar .sidebar-socialmedia {
+  padding-top: 1px;
+  padding-left: 5px;
+}
+
+.sidebar .sidebar-socialmedia a {
+  display: inline;
+  text-decoration: none;
+  vertical-align: top;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.sidebar .bar {
+  font-size:20px;
+  color:#dfdfdf;
+}
+
+.sidebar-ad {
+  width: 278px;
+  height: 300px;
+  margin-top: 47px;
+  background: url('images/paddle_surfer.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+.sidebar-ad::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,50,.4);
+  transition: 1s;
+}
+
+.sidebar-ad:hover::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:transparent;
+}
+
+.sidebar p {
+  text-align:left;
+  font-family:'Open Sans', sans-serif;
+  font-size:16px;
+  line-height:24px;;
+  color:#999;
+  margin-top:0;
+}
+
+.sidebar h3 {
+  text-transform: uppercase;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0052A4;
+  margin-bottom: 0;
+  margin-top: 69px;
+}
+
+.sidebar .sidebar-ad-link a {
+  color:#999;
+  float:right;
+  font-family:'Open Sans', sans-serif;
+  font-size:14px;
+  margin-top:5px;
+}
+
+.carousel-header {
+  width:100%;
+  border-top:1px solid #dfdfdf;
+
+}
+
+.carousel-header-container {
+  width:960px;
+  height:146px;
+  background:#FFF;
+  margin:0 auto;
+}
+
+.carousel-header-container h2 {
+  text-transform:uppercase;
+  font-family:'Oswald', sans-serif;
+  font-size:63px;
+  font-weight:400;
+  color:#043450;
+  text-align:center;
+  margin-top:0;
+  margin-bottom:0;
+  padding-top:25px;
+}
+
+.carousel {
+  width:100%;
+  height:330px;
+  background:#555;
+  padding:0;
+}
+
+.carousel > div {
+  display: inline-block;
+}
+
+.carousel-box1 {
+  width:25%;
+  height:330px;
+  background:url('images/surfing.jpg') center center;
+  background-size:cover;
+  position:relative;
+}
+
+.carousel-box1 h3 {
+  position:absolute;
+  bottom:0;
+  font-family:'Oswald', sans-serif;
+  text-transform:uppercase;
+  font-size:28px;
+  font-weight:400;
+  margin:0;
+  padding-left:15px;
+  padding-bottom:10px;
+}
+
+.carousel-box1:hover .carousel-title {
+  color:#FFF;
+  text-shadow:1px 1px 6px #000;
+  transition:.5s;
+}
+
+.carousel-box1::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,50,.4);
+  transition: 1s;
+}
+
+.carousel-box1:hover::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:transparent;
+}
+
+.carousel-box2 {
+  width:25%;
+  height:330px;
+  background:url('images/alana.jpg') center center;
+  background-size:cover;
+  position:relative;
+}
+
+.carousel-box2 h3 {
+  position:absolute;
+  bottom:0;
+  font-family:'Oswald', sans-serif;
+  text-transform:uppercase;
+  font-size:28px;
+  font-weight:400;
+  margin:0;
+  padding-left:15px;
+  padding-bottom:10px;
+}
+
+.carousel-box2:hover .carousel-title {
+  color:#FFF;
+  text-shadow:1px 1px 6px #000;
+  transition:.5s;
+}
+
+.carousel-box2::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,50,.4);
+  transition: 1s;
+}
+
+.carousel-box2:hover::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:transparent;
+}
+
+.carousel-box3 {
+  width:25%;
+  height:330px;
+  background:url('images/surfer_girls.jpg') center center;
+  background-size:cover;
+  position:relative;
+}
+
+.carousel-box3 h3 {
+  position:absolute;
+  bottom:0;
+  width:230px;
+  line-height:36px;
+  font-family:'Oswald', sans-serif;
+  text-transform:uppercase;
+  font-size:28px;
+  font-weight:400;
+  margin:0;
+  padding-left:15px;
+  padding-bottom:10px;
+}
+
+.carousel-box3:hover .carousel-title {
+  color:#FFF;
+  text-shadow:1px 1px 6px #000;
+  transition:.5s;
+}
+
+.carousel-box3::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,50,.4);
+  transition: 1s;
+
+}
+
+.carousel-box3:hover::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:transparent;
+}
+.carousel-box4 {
+  width:25%;
+  height:330px;
+  background:url('images/surfer_water.jpg') center center;
+  background-size:cover;
+  position:relative;
+}
+
+.carousel-box4 h3 {
+  position:absolute;
+  bottom:0;
+  font-family:'Oswald', sans-serif;
+  text-transform:uppercase;
+  font-size:28px;
+  font-weight:400;
+  margin:0;
+  padding-left:15px;
+  padding-bottom:10px;
+}
+
+.carousel-box4:hover .carousel-title {
+  color:#FFF;
+  text-shadow:1px 1px 6px #000;
+  transition:.5s;
+}
+
+.carousel-box4::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,50,.4);
+  transition: 1s;
+
+}
+
+.carousel-box4:hover::after {
+  content:"";
+  display:inline-block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:transparent;
+}
+
+.footer-bottom {
+  width:100%;
+  height:96px;
+  background:#04334E;
+}
+
+.footer-container {
+  width:974px;
+  position:relative;
+  margin:0 auto;
+}
+
+.footer-copyright {
+  display:inline-block;
+}
+
+.footer-copyright p {
+  display:inline-block;
+  vertical-align:top;
+  font-family:'Open Sans', sans-serif;
+  color:#A2B3BE;
+  font-size:14px;
+  padding-top:25px;
+}
+
+.footer-copyright a {
+  display:inline-block;
+  vertical-align:top;
+  padding-top:15px;
+}
+
+.footer-nav ul {
+  position: absolute;
+  right: 0;
+  top: 40%;
+  transform: translateY(-60%);
+}
+
+.footer-nav li {
+  display: inline-block;
+  color:#A2B3BE;
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
+  font-size:14px;
+}
+
+.footer-bar {
+  color:#A2B3BE;
+  font-size:14px;
+  font-family:'Open Sans', sans-serif;
+  font-weight:300;
 }
