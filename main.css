@@ -312,174 +312,163 @@ h1 {
 
 .content-footer {
   display:inline-block;
-  margin-bottom: 64px;
-  padding-top: 3px;
-  padding-left: 4px;
+  margin-bottom: 68px;
+  padding-left: 3px;
 }
 
 .comments-container {
-  position:relative;
-  display:inline-block;
-  vertical-align:top;
-  margin:0;
-  width:160px;
+  position: relative;
+  background:#A2B3BE;
+  display: inline-block;
+  vertical-align: top;
+  width: 158px;
+  height:30px;
 }
 
-.comments-container:hover .comments-image {
+.comments-container:hover .comments-image-container {
   background:#043450;
   transition:.5s;
 }
 
-.comments-container:hover .comments-text {
+.comments-container:hover {
   background:#026EAE;
   transition:.5s;
 }
 
-.comments-image {
+.comments-image-container {
+  position:absolute;
+  height:30px;
+  width:33px;
   display: inline;
-  background: #5D686E;
-  height: 29px;
-  width: 29px;
-  padding-left: 2px;
-  padding-top: 3px;
-  padding-bottom: 8px;
-  padding-right: 1px;
-  vertical-align: top;
+  padding-top:3px;
+  padding-left:4px;
+  background-color: #5D686E;
+  z-index:5;
 }
-
 
 .comments-text {
   display: inline;
-  margin: 0;
-  background: #A2B3BE;
-  height: 29px;
-  width: 131px;
-  vertical-align: top;
-  padding-top: 3px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 9px;
+  float:right;
+  padding:3px 9px 0px 0px;
 }
+
 .comments-text p {
-  display: inline-block;
+  display: inline;
   font-size: 14px;
   color: #FFF;
-  margin: 0;
-  padding-left: 5px;
-  vertical-align: top;
+  text-decoration:none;
   font-family:'Open Sans', sans-serif;
 }
+.comments-text a {
+  display:inline;
+  text-decoration:none;
+}
+
+
 
 
 
 
 .later-container {
   position: relative;
+  background:#A2B3BE;
   display: inline-block;
   vertical-align: top;
-  margin: 0;
-  width: 134px;
-  margin-left: 3px;
+  width: 129px;
+  height:30px;
+  margin-left:6px;
 }
 
-.later-container:hover .later-image {
+.later-container:hover .later-image-container {
   background:#043450;
   transition:.5s;
 }
 
-.later-container:hover .later-text {
+.later-container:hover {
   background:#026EAE;
   transition:.5s;
 }
 
-.later-image {
+.later-image-container {
+  position:absolute;
+  height:30px;
+  width:34px;
   display: inline;
-  background: #5D686E;
-  height: 29px;
-  width: 29px;
-  padding-left: 2px;
-  padding-top: 3px;
-  padding-bottom: 8px;
-  padding-right: 1px;
-  vertical-align: top;
+  padding-top:3px;
+  padding-left:3px;
+  background-color: #5D686E;
+  z-index:5;
 }
 
 .later-text {
   display: inline;
-  margin: 0;
-  background: #A2B3BE;
-  height: 29px;
-  width: 131px;
-  vertical-align: top;
-  padding-top: 3px;
-  padding-bottom: 8px;
-  padding-left: 8px;
-  padding-right: 13px;
+  float:right;
+  padding:3px 14px 0px 0px;
 }
+
 .later-text p {
-  display: inline-block;
+  display: inline;
   font-size: 14px;
   color: #FFF;
-  margin: 0;
-  padding-left: 5px;
-  vertical-align: top;
+  text-decoration:none;
   font-family:'Open Sans', sans-serif;
+}
+.later-text a {
+  display:inline;
+  text-decoration:none;
 }
 
 
 
 
 .share-container {
-  position:relative;
-  display:inline-block;
-  vertical-align:top;
-  margin:0;
-  width:160px;
+  position: relative;
+  background:#A2B3BE;
+  display: inline-block;
+  vertical-align: top;
+  width: 154px;
+  height:30px;
+  margin-left:5px;
 }
 
-.share-container:hover .share-image {
+.share-container:hover .share-image-container {
   background:#043450;
   transition:.5s;
 }
 
-.share-container:hover .share-text {
+.share-container:hover {
   background:#026EAE;
   transition:.5s;
 }
 
-.share-image {
+.share-image-container {
+  position:absolute;
+  height:30px;
+  width:33px;
   display: inline;
-  background: #5D686E;
-  height: 29px;
-  width: 29px;
-  padding-left: 0px;
-  padding-top: 3px;
-  padding-bottom: 8px;
-  vertical-align: top;
+  padding-top:3px;
+  background-color: #5D686E;
+  z-index:5;
 }
-
 
 .share-text {
   display: inline;
-  margin: 0;
-  background: #A2B3BE;
-  height: 29px;
-  width: 131px;
-  vertical-align: top;
-  padding-top: 3px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 10px;
+  float:right;
+  padding:3px 12px 0px 0px;
 }
+
 .share-text p {
-  display: inline-block;
+  display: inline;
   font-size: 14px;
   color: #FFF;
-  margin: 0;
-  padding-left: 5px;
-  vertical-align: top;
+  text-decoration:none;
   font-family:'Open Sans', sans-serif;
 }
+.share-text a {
+  display:inline;
+  text-decoration:none;
+}
+
 
 .sidebar {
   display: inline-block;
@@ -956,6 +945,28 @@ h1 {
     width:100%;
   }
 
+  .banner-menu-logo {
+    display:inline-block;
+    width:50px;
+  }
+
+  .banner-menu-logo p {
+    display:none;
+  }
+
+  .banner-menu-logo .surfpaddle-logo {
+    margin-left:2em;
+    margin-top:1em;
+
+  }
+  .banner-menu-logo .surfpaddle-logo a {
+    position:absolute;
+    height: 55px;
+    width: 55px;
+  }
+
+  .banner-menu-links {
+  }
 
   .banner-heading h1 {
     font-size:40px;
@@ -965,32 +976,77 @@ h1 {
 
   .pagebody {
     width:100%;
+    padding-left:1em;
+    padding-right:1em;
   }
   .content {
     width:100%;
+    margin-top:2em;
   }
 
   .content h2 {
     font-size:36px;
     line-height:46px;
-    text-align:center;
-    padding-left:1em;
-    padding-right:1em;
+    text-align:left;
+
   }
 
   .content p {
-    padding-left:1em;
-    padding-right:1em;
+    text-align:left;
+    margin-top:16px;
+
   }
   .author-info {
-    text-align:center;
+    text-align:left;
+  }
+
+  .content-blurb {
+    margin-left:1em;
+  }
+
+  .content-blurb p {
+    padding-left:.5em;
   }
 
   .content-footer {
     display:block;
+    padding-left:0px;
   }
   .comments-container {
-    display:block;
+    display:inline-block;
+    width:33px;
+  }
+
+  .comments-text {
+    display:none;
+    float:left;
+    margin-left:30px;
+  }
+
+  .later-container {
+    display:inline-block;
+    margin-top:0px;
+    margin-left:2px;
+    width:35px;
+  }
+
+  .later-text {
+    display:none;
+    float:left;
+    margin-left:30px;
+  }
+
+  .share-container {
+    display:inline-block;
+    margin-top:0px;
+    margin-left:2px;
+    width:33px;
+  }
+
+  .share-text {
+    display:none;
+    float:left;
+    margin-left:30px;
   }
 
   .sidebar {
@@ -1026,6 +1082,11 @@ h1 {
 
   .sidebar h3, .sidebar p {
     text-align:center;
+  }
+
+  .sidebar p {
+    padding-left:2em;
+    padding-right:2em;
   }
 
   .sidebar h3 {
